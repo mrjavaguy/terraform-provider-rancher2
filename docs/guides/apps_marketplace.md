@@ -117,7 +117,7 @@ resource "rancher2_app_v2" "rancher-monitoring" {
   repo_name = "rancher-charts"
   chart_name = "rancher-monitoring"
   chart_version = "9.4.200"
-  values = <<EOF
+  values = \<\<EOF
 prometheus:
   prometheusSpec:
     requests:
@@ -146,7 +146,7 @@ resource "rancher2_app_v2" "rancher-monitoring" {
   repo_name = "rancher-charts"
   chart_name = "rancher-monitoring"
   chart_version = "9.4.200"
-  values = <<EOF
+  values = \<\<EOF
 prometheus:
   prometheusSpec:
     requests:
@@ -191,7 +191,7 @@ resource "rancher2_app_v2" "rancher-backup" {
   repo_name = "rancher-charts"
   chart_name = "rancher-backup"
   chart_version = "1.0.200"
-  values = <<EOF
+  values = \<\<EOF
 persistence:
   enabled: false
   size: 2Gi
